@@ -45,6 +45,7 @@ bower_components
 build/Release
 coverage
 dist
+generated.ts
 jspm_packages/
 lerna-debug.log*
 lib-cov
