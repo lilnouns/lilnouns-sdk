@@ -53,7 +53,7 @@ node_modules/
 npm-debug.log*
 out
 pids
-pnpm-lock.yml
+pnpm-lock.yaml
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 web_modules/
 yarn-debug.log*
