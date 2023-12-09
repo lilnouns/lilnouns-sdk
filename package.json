@@ -6,8 +6,12 @@
   "scripts": {
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": ["nouns", "lilnouns", "nounish"],
+  },
+  "keywords": [
+    "nouns",
+    "lilnouns",
+    "nounish"
+  ],
   "author": "Milad Nekofar <milad@nekofar.com>",
   "license": "Apache-2.0",
   "devDependencies": {
