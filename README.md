@@ -1,1 +1,1 @@
-# lilnouns-sdk
+# LilNouns SDK
