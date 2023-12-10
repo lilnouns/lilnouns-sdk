@@ -3,6 +3,25 @@ import { actions, fetch, react } from '@wagmi/cli/plugins'
 import { camelCase } from 'change-case'
 import { default as _fetch } from 'node-fetch'
 
+const contracts: Omit<ContractConfig, 'abi'>[] = [
+  {
+    name: 'Token',
+    address: '0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B',
+  },
+  {
+    name: 'Auction',
+    address: '0x55e0F7A3bB39a28Bd7Bcc458e04b3cF00Ad3219E',
+  },
+  {
+    name: 'Treasury',
+    address: '0xd5f279ff9EB21c6D40C8f345a66f2751C4eeA1fB',
+  },
+  {
+    name: 'Governor',
+    address: '0x5d2C31ce16924C2a71D317e5BbFd5ce387854039',
+  },
+]
+
 function etherscan({
   apiKey,
   name,
@@ -58,24 +77,7 @@ export default defineConfig({
     etherscan({
       name: 'Etherscan',
       apiKey: process.env.ETHERSCAN_API_KEY,
-      contracts: [
-        {
-          name: 'Token',
-          address: '0x4b10701Bfd7BFEdc47d50562b76b436fbB5BdB3B',
-        },
-        {
-          name: 'Auction',
-          address: '0x55e0F7A3bB39a28Bd7Bcc458e04b3cF00Ad3219E',
-        },
-        {
-          name: 'Treasury',
-          address: '0xd5f279ff9EB21c6D40C8f345a66f2751C4eeA1fB',
-        },
-        {
-          name: 'Governor',
-          address: '0x5d2C31ce16924C2a71D317e5BbFd5ce387854039',
-        },
-      ],
+      contracts,
     }),
     actions({
       getContract: true,
