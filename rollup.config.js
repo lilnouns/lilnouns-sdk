@@ -10,7 +10,12 @@ export default [
       dir: 'dist',
       format: 'cjs',
     },
-    plugins: [typescript(), nodeResolve(), commonjs(), terser()],
+    plugins: [
+      typescript(),
+      nodeResolve({ preferBuiltins: true }),
+      commonjs(),
+      terser(),
+    ],
   },
   {
     input: 'src/hooks.ts',
@@ -18,7 +23,12 @@ export default [
       dir: 'dist',
       format: 'cjs',
     },
-    plugins: [typescript(), nodeResolve(), commonjs(), terser()],
+    plugins: [
+      typescript(),
+      nodeResolve({ preferBuiltins: true }),
+      commonjs(),
+      terser(),
+    ],
   },
   {
     input: 'src/configs.ts',
@@ -26,6 +36,11 @@ export default [
       dir: 'dist',
       format: 'cjs',
     },
-    plugins: [typescript(), nodeResolve(), commonjs(), terser()],
+    plugins: [
+      typescript(),
+      nodeResolve({ preferBuiltins: true }),
+      commonjs(),
+      terser(),
+    ],
   },
 ]
