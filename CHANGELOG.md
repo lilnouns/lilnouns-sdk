@@ -2,6 +2,54 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.1] - 2023-12-10
+
+### Features
+
+- Add new hooks for auction, governor, token, and treasury
+- Export new actions from generated file
+- Add new configuration file exporting modules
+
+### Refactor
+
+- Remove `greet` function and `index`
+
+### Documentation
+
+- Add detailed documentation to `README.md`
+
+### Miscellaneous Tasks
+
+- Add `.editorconfig` file
+- Update scripts and keywords in `package.json`
+- Remove `pnpm-lock.yaml` file
+- Add Prettier configuration file
+- Update `.gitignore` to recognize `pnpm-lock.yaml`
+- Add `eslint` linting script to `package.json`
+- Add `.eslintrc.json` file for ESLint configuration
+- Update `package.json` to include `husky` install in scripts
+- Add `lint-staged` configuration
+- Add `pre-commit` hook for linting and testing
+- Add `wagmi.config.ts` file
+- Update `test` script in `package.json`
+- Add `generated.ts` to `.gitignore`
+- Add custom Etherscan plugin in Wagmi config
+- Update `eslint` command in `lint-staged.config.js`
+- Refactor fetch function in `wagmi.config.ts`
+- Update `tsconfig.json` configuration
+- Enable scripts in `.npmrc` configuration
+- Add Rollup configuration with plugins for build system
+- Update `tsconfig.json` settings for modules and declarations
+- Update build script to use rollup and add `rimraf`
+- Adjust Rollup config to prefer built-in modules
+- Update `prebuild` script in `package.json`
+- Add custom warning handler to `rollup.config.js`
+- Update `package.json` to include specific files
+
+### Styling
+
+- Remove extra period in greeting message
+
 ## [1.0.0-alpha.0] - 2023-12-09
 
 ### Refactor
