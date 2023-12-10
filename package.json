@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "prebuild": "rimraf dist",
+    "build": "rollup -c --bundleConfigAsCjs",
     "lint": "eslint . --ext .ts,.tsx",
     "test": ":",
     "prepare": "husky install"
@@ -42,6 +43,7 @@
     "prettier": "^3.1.0",
     "prettier-plugin-jsdoc": "^1.1.1",
     "prettier-plugin-organize-imports": "^3.2.4",
+    "rimraf": "^5.0.1",
     "rollup": "^3.25.1",
     "typescript": "^5.3.2",
     "wagmi": "^1.4.10"
