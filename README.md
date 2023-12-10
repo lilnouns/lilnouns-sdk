@@ -54,9 +54,9 @@ project.
 Here is a basic example of how to use `lilnouns-sdk`:
 
 ```javascript
-import { greet } from '@lilnouns/lilnouns-sdk'
+import { getToken } from '@lilnouns/lilnouns-sdk/actions'
 
-console.log(greet('World')) // Output: Hello, World! Welcome to lilnouns-sdk.
+console.log(getToken())
 ```
 
 ## Contributing
