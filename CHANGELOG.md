@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0-alpha.3] - 2023-12-10
+
+### Documentation
+
+- Add feature request, bug report templates and config file
+- Add funding information
+
+### Miscellaneous Tasks
+
+- Add Build Pipeline workflow in GitHub Actions
+- Add Dependabot configuration file
+- Add stale issue management configuration
+- Simplify `tsconfig.json` configuration
+- Refactor and simplify `etherscan` plugin in `wagmi.config.ts`
+- Add `.eslintignore` file
+
 ## [1.0.0-alpha.2] - 2023-12-10
 
 ### Documentation
